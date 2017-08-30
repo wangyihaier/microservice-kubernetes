@@ -1,5 +1,5 @@
 param(
-[string]$DOCKER_ACCOUNT=wangyihaier
+[string]$DOCKER_ACCOUNT="wangyihaier"
 )
 
 kubectl run apache --image=docker.io/$DOCKER_ACCOUNT/microservice-kubernetes-demo-apache:latest --port=80
